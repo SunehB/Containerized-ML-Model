@@ -12,8 +12,8 @@ This is an API that serves a machine learning model trained on the famous Iris d
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/SunehB/containerized-ml-model.git
-   cd containerized-ml-model
+   git clone https://github.com/SunehB/Containerized-ML-Model.git
+   cd Containerized-ML-Model
 2. **Build and run the container**:
     make build
     make run
