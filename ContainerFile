@@ -1,0 +1,7 @@
+FROM docker.io/jupyter/scipy-notebook:latest
+
+# Install packages
+RUN pip install scikit-learn pandas
+
+# Expose Jupyter Notebook port
+EXPOSE 8888

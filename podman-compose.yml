@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ml-model:
+    image: ml-model-serving:latest
+    ports:
+      - "5002:5000"  # First replica on host port 5001
+      - "5003:5000"  # Second replica on host port 5002
+      - "5004:5000"  # Third replica on host port 5003
+    deploy:
+      replicas: 3

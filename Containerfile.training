@@ -1,0 +1,17 @@
+# Containerfile
+
+FROM python:3.9-slim
+
+# Set the working directory
+WORKDIR /app
+
+# Copy files
+COPY requirements.txt requirements.txt
+COPY train_model.py train_model.py
+
+# Install dependencies
+RUN pip install -r requirements.txt
+
+# Run the training script
+CMD ["python", "train_model.py"]
+

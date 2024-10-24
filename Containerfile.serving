@@ -1,0 +1,22 @@
+# Containerfile serving
+
+FROM python:3.9-slim
+
+# Set the working directory
+WORKDIR /app
+
+# Copy files
+COPY requirements.txt requirements.txt
+COPY app.py app.py
+COPY model.joblib model.joblib
+
+# Install dependencies
+RUN pip install -r requirements.txt
+
+# Expose the port
+EXPOSE 5000
+
+# Run the application
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "app:app"]
+
+
