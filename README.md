@@ -19,11 +19,11 @@ This is an API that serves a machine learning model trained on the famous Iris d
     make run
 The API will be running at http://localhost:5001/.
 
-**To stop and remove the container**:
+3. **To stop and remove the container**:
 
-make stop
+      make stop
 
-make remove
+      make remove
 
 **Rebuild**
 
