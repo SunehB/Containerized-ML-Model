@@ -22,12 +22,15 @@ The API will be running at http://localhost:5001/.
 **To stop and remove the container**:
 
 make stop
+
 make remove
 
 **Rebuild**
+
 make rebuild
 
 **To test inputs**
+
 Place whatever combination of inputs to get a prediction. Can compare to the actual data set here: https://www.kaggle.com/datasets/uciml/iris
 
 curl -X POST -H "Content-Type: application/json" \
