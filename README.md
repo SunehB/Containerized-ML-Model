@@ -25,13 +25,13 @@ The API will be running at http://localhost:5001/.
 
       make remove
 
-**Rebuild**
+4. **Rebuild**
 
-make rebuild
+      make rebuild
 
-**To test inputs**
+5. **To test inputs**
 
-Place whatever combination of inputs to get a prediction. Can compare to the actual data set here: https://www.kaggle.com/datasets/uciml/iris
+      Place whatever combination of inputs to get a prediction. Can compare to the actual data set here: https://www.kaggle.com/datasets/uciml/iris
 
 curl -X POST -H "Content-Type: application/json" \
     -d '{"input": [5.1, 3.5, 1.4, 0.2]}' \
