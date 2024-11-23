@@ -21,7 +21,7 @@ remove:
 # Stop and remove the container
 clean: stop remove
 
-# Install Python dependencies locally (optional if someone prefers running without container)
+# Install Python dependencies locally (optional)
 install:
 	pip install -r requirements.txt
 
